@@ -6,23 +6,69 @@
     background: transparent;
     padding: 10px;
 }
+
+.logo {
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.logo h1 {
+    font-family: "Noto Sans", "Noto Sans Display", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20p;
+
+}
+
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: aquamarine; */
+    height: 100%;
 }
+
 .nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
 }
+
 .nav ul li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
+
 .nav ul li a {
+    font-family: "Noto Sans", "Noto Sans Display", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-decoration: none;
     position: relative;
+    font-size: 20px;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+.buttons {
+   height: 100%;
+   display: flex;
+   column-gap: 20px;
+}
+.buttons button {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
     font-size: 18px;
 }
