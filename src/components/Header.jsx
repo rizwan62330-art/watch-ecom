@@ -8,12 +8,12 @@ function Header() {
         <h1>Seiko</h1>
       </div>
       <div className="nav">
-        <ol>
-           <ul><a href="#home">Home</a></ul>
-           <ul><a href="#">About</a></ul>
-           <ul><a href="#">Orders</a></ul>
-           <ul><a href="#">Contact</a></ul>
-        </ol>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#orders">Orders</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
       <div className='buttons'>
         <button>Login</button>
